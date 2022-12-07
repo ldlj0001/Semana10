@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>WEB APPLICATION 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- comment -->
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+            
+
+    </head>
+    <body>
+        <h1 class="display-3"><center>BASES DE DATOS</center></h1>
+        <!--BEGIN: NAVBAR-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">DataBases</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mysql">MySql</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mongo">MongoDB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#postgres">PostgresSQL</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!--END: NAVBAR-->
+        
+        <!--BEGIN: CARRUSEL -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://ed.team/_next/image?url=https%3A%2F%2Fedteam-media.s3.amazonaws.com%2Fcourses%2Fbig%2F3aa59acc-3472-4875-b9c6-216825be755b.png&w=1920&q=75" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/zBPCfEhW65BKHa1HbLvBk8BX" class="d-block w-100" alt="Mo">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/q72r-hSWFTo/maxresdefault.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!--END: CARRUSEL-->
+
+        <!--BEGIN: acordeon -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"  id="mysql">
+                  Mysql
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><h4>Concepto</h4>
+                    <p>Es un sistema de bases de datos relacionales, esto quiere decir uqe su estructura de datos depende de la relación existente entre sus diferentes tablas.
+                        . MySql tiene dos versiones, una que es de código abierto, y otra versión comercial que es gestionada por la compañía Oracle.</p>
+                    <h4>Comandos Básicos desde consola de comandos</h4>
+                    <h6>Login</h6>
+                    <p><code>Mysql -h localhost -u User - pPassword </code></p>
+                    <h6>Create Database</h6>
+                    <p><code>CREATE DATABASE db_name;</code></p>
+                    <h6>Create Table</h6>
+                    <p><code>CREATE TABLE table_name (
+                        column1 datatype,
+                        column2 datatype,
+                        column3 datatype,
+                       ....
+                    );</code></p>
+                    <h6>Insert Data</h6>
+                    <p><code>INSERT INTO table_name (column1, column2, column3, ...)
+                        VALUES (value1, value2, value3, ...);</code></p>
+                    <h6>Query Data</h6>
+                    <p><code>SELECT column1, column2, ...
+                        FROM table_name;</code></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" id="mongo">
+                  MongoDB 
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><h4>Concepto</h4>
+                    <p>MongoDb usa un esquema de bases de datos no relacionales, lo cual quiere decir que no asocia la informaciòn basada en tablas interconectadas, sino en esquema de datos BSON (Basado en JSON, de hecho la informaciòn en este tipo de base se inserta usando un JSON), que permite anidar en un mismo "Documento" la data necesaria para el registro insertado.</p>
+                    <h4>Comandos Básicos desde consola de comandos</h4>
+                    <h6>Login</h6>
+                    <p><code>mongo -u AdminSammy -p --authenticationDatabase admin</code></p>
+                    <h6>Create Database</h6>
+                    <p><code>use [database_name]</code></p>
+                    <h6>Create Table</h6>
+                    <p><code>db.createCollection(name, options)</code></p>
+                    <h6>Insert Data</h6>
+                    <p><code>db.inventory.insertOne(
+                        { item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm" } }
+                     )</code></p>
+                    <h6>Query Data</h6>
+                    <p><code>db.collection.find(query, projection, options)</code></p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" id="postgres">
+                  PortgresSQL
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><h4>Concepto</h4>
+                    <p>Es una base de datos relacional orientada a objetos, lo cual permite que se puedan crear nuevos tipos de datos que se ajusten a lo que se requiera. Dentro de sus caracteristicas principales se encuentran  robustez de funciones, alta fiabilidad, rendimiento, flexibilidad y facilidad de replicación. </p>
+                        <h4>Comandos Básicos desde consola de comandos</h4>
+                        <h6>Login</h6>
+                        <p><code>psql -U testuser testdb</code></p>
+                        <h6>Create Database</h6>
+                        <p><code>sudo -u postgres createdb --owner=testuser testdb</code></p>
+                        <h6>Create Table</h6>
+                        <p><code>testdb=> create table if not exists cafe (
+                            name varchar(50),
+                            price numeric(5,2),
+                            primary key (name));
+                 CREATE TABLE</code></p>
+                        <h6>Insert Data</h6>
+                        <p><code>testdb=> insert into cafe values
+                            ('Espresso', 3.99),
+                            ('Green Tea', 2.99);</code></p>
+                        <h6>Query Data</h6>
+                        <p><code>SELECT
+                            select_list
+                         FROM
+                            table_name;</code></p></div>
+              </div>
+            </div>
+          </div>
+        <!--END: acordeon -->
+        <!--BEGIN: FOOTER-->
+        <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Referencias</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://dev.mysql.com/doc/refman/8.0/en/select.html">https://dev.mysql.com/doc/refman/8.0/en/select.html</a></li>
+                <li class="list-group-item"><a href="https://www.mongodb.com/docs/manual/tutorial/insert-documents/">https://www.mongodb.com/docs/manual/tutorial/insert-documents/</a></li>
+                <li class="list-group-item"><a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-mongodb-shell">https://www.digitalocean.com/community/tutorials/how-to-use-the-mongodb-shell</a></li>
+                <li class="list-group-item"><a href="https://www.postgresqltutorial.com">https://www.postgresqltutorial.com</a></li>
+                <li class="list-group-item"><a href="https://www.w3schools.com/html">https://www.w3schools.com/html</a></li>
+                
+              </ul>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+        <!--END: FOOTER-->
+    </body>
+</html>
